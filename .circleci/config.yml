@@ -28,7 +28,7 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      -run: npm run test
+      - run: npm run test
       - attach_workspace:
           at: ~/
       - sayhello
